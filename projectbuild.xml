@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="Assignments">
+    <property environment="env"/>
+    <property name="ECLIPSE_HOME" value="../../../../eclipse/jee-2022-122/eclipse/"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.8"/>
+    <property name="source" value="1.8"/>
+    <path id="Assignments.classpath">
+        <pathelement location="bin"/>
+    </path>
+    <path id="run.AdditionMatrix.classpath">
+        <path refid="Assignments.classpath"/>
+    </path>
+    <path id="run.BackspaceString.classpath">
+        <path refid="Assignments.classpath"/>
+    </path>
+    <path id="run.CharacterAtXthIndex.classpath">
+        <path refid="Assignments.classpath"/>
+    </path>
+    <path id="run.CountBinarySubstrings.classpath">
+        <path refid="Assignments.classpath"/>
+    </path>
+    <path id="run.DataEncapsulation.classpath">
+        <path refid="Assignments.classpath"/>
+    </path>
+    <path id="run.DuplicateChar1.classpath">
+        <path refid="Assignments.classpath"/>
+    </path>
+    <path id="run.DuplicateElementsInArray.classpath">
+        <path refid="Assignments.classpath"/>
+    </path>
+    <path id="run.ExceptionHandlingEx.classpath">
+        <path refid="Assignments.classpath"/>
+    </path>
+    <path id="run.Exceptionss.classpath">
+        <path refid="Assignments.classpath"/>
+    </path>
+    <path id="run.FindLengthOfString.classpath">
+        <path refid="Assignments.classpath"/>
+    </path>
+    <path id="run.FindStringCount.classpath">
+        <path refid="Assignments.classpath"/>
+    </path>
+    <path id="run.FindTheMaxandMin.classpath">
+        <path refid="Assignments.classpath"/>
+    </path>
+    <path id="run.FirstThread.classpath">
+        <path refid="Assignments.classpath"/>
+    </path>
+    <path id="run.FirstUniqueCharacter.classpath">
+        <path refid="Assignments.classpath"/>
+    </path>
+    <path id="run.Fractorial1.classpath">
+        <path refid="Assignments.classpath"/>
+    </path>
+    <path id="run.GroceryReceipt.classpath">
+        <path refid="Assignments.classpath"/>
+    </path>
+    <path id="run.HashMapAssignments.classpath">
+        <path refid="Assignments.classpath"/>
+    </path>
+    <path id="run.InsertStringInAString.classpath">
+        <path refid="Assignments.classpath"/>
+    </path>
+    <path id="run.KadanesAlogirthm1.classpath">
+        <path refid="Assignments.classpath"/>
+    </path>
+    <path id="run.Knapsack1.classpath">
+        <path refid="Assignments.classpath"/>
+    </path>
+    <path id="run.ListAssignments.classpath">
+        <path refid="Assignments.classpath"/>
+    </path>
+    <path id="run.MainThread.classpath">
+        <path refid="Assignments.classpath"/>
+    </path>
+    <path id="run.MainThread1.classpath">
+        <path refid="Assignments.classpath"/>
+    </path>
+    <path id="run.MissingElementsInArray1.classpath">
+        <path refid="Assignments.classpath"/>
+    </path>
+    <path id="run.palindrome1.classpath">
+        <path refid="Assignments.classpath"/>
+    </path>
+    <path id="run.PrintArray (1).classpath">
+        <path refid="Assignments.classpath"/>
+    </path>
+    <path id="run.Removeduplicates1.classpath">
+        <path refid="Assignments.classpath"/>
+    </path>
+    <path id="run.RemoveSpacesInString.classpath">
+        <path refid="Assignments.classpath"/>
+    </path>
+    <path id="run.RemovingWhiteSpaces.classpath">
+        <path refid="Assignments.classpath"/>
+    </path>
+    <path id="run.ReplaceString.classpath">
+        <path refid="Assignments.classpath"/>
+    </path>
+    <path id="run.ReverseAArray.classpath">
+        <path refid="Assignments.classpath"/>
+    </path>
+    <path id="run.ReverseAString.classpath">
+        <path refid="Assignments.classpath"/>
+    </path>
+    <path id="run.RunThread.classpath">
+        <path refid="Assignments.classpath"/>
+    </path>
+    <path id="run.SearchElementInArray.classpath">
+        <path refid="Assignments.classpath"/>
+    </path>
+    <path id="run.SecondLargest1.classpath">
+        <path refid="Assignments.classpath"/>
+    </path>
+    <path id="run.SetExample.classpath">
+        <path refid="Assignments.classpath"/>
+    </path>
+    <path id="run.SetProgram.classpath">
+        <path refid="Assignments.classpath"/>
+    </path>
+    <path id="run.SortArray.classpath">
+        <path refid="Assignments.classpath"/>
+    </path>
+    <path id="run.StringIsPlandorme.classpath">
+        <path refid="Assignments.classpath"/>
+    </path>
+    <path id="run.SumOfListIntegers.classpath">
+        <path refid="Assignments.classpath"/>
+    </path>
+    <path id="run.TestBank1.classpath">
+        <path refid="Assignments.classpath"/>
+    </path>
+    <target name="init">
+        <mkdir dir="bin"/>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="src">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="bin"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src"/>
+            <classpath refid="Assignments.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+    <target name="AdditionMatrix">
+        <java classname="com.tarak.practice.AdditionMatrix" failonerror="true" fork="yes">
+            <classpath refid="run.AdditionMatrix.classpath"/>
+        </java>
+    </target>
+    <target name="BackspaceString">
+        <java classname="com.tarak.practice.BackspaceString" failonerror="true" fork="yes">
+            <classpath refid="run.BackspaceString.classpath"/>
+        </java>
+    </target>
+    <target name="CharacterAtXthIndex">
+        <java classname="com.tarak.stringpractice.CharacterAtXthIndex" failonerror="true" fork="yes">
+            <classpath refid="run.CharacterAtXthIndex.classpath"/>
+        </java>
+    </target>
+    <target name="CountBinarySubstrings">
+        <java classname="com.tarak.practice.CountBinarySubstrings" failonerror="true" fork="yes">
+            <classpath refid="run.CountBinarySubstrings.classpath"/>
+        </java>
+    </target>
+    <target name="DataEncapsulation">
+        <java classname="com.tarak.practice.DataEncapsulation" failonerror="true" fork="yes">
+            <classpath refid="run.DataEncapsulation.classpath"/>
+        </java>
+    </target>
+    <target name="DuplicateChar1">
+        <java classname="com.tarak.practice.DuplicateChar1" failonerror="true" fork="yes">
+            <classpath refid="run.DuplicateChar1.classpath"/>
+        </java>
+    </target>
+    <target name="DuplicateElementsInArray">
+        <java classname="com.tarak.stringpractice.DuplicateElementsInArray" failonerror="true" fork="yes">
+            <classpath refid="run.DuplicateElementsInArray.classpath"/>
+        </java>
+    </target>
+    <target name="ExceptionHandlingEx">
+        <java classname="com.tarak.practice.ExceptionHandlingex" failonerror="true" fork="yes">
+            <classpath refid="run.ExceptionHandlingEx.classpath"/>
+        </java>
+    </target>
+    <target name="Exceptionss">
+        <java classname="com.hackerrank.tarak.Exceptionss" failonerror="true" fork="yes">
+            <classpath refid="run.Exceptionss.classpath"/>
+        </java>
+    </target>
+    <target name="FindLengthOfString">
+        <java classname="com.tarak.stringpractice.FindLengthOfString" failonerror="true" fork="yes">
+            <classpath refid="run.FindLengthOfString.classpath"/>
+        </java>
+    </target>
+    <target name="FindStringCount">
+        <java classname="com.tarak.practice.FindStringCount" failonerror="true" fork="yes">
+            <classpath refid="run.FindStringCount.classpath"/>
+        </java>
+    </target>
+    <target name="FindTheMaxandMin">
+        <java classname="com.tarak.practice.FindTheMaxandMin" failonerror="true" fork="yes">
+            <classpath refid="run.FindTheMaxandMin.classpath"/>
+        </java>
+    </target>
+    <target name="FirstThread">
+        <java classname="com.tarak.practice.FirstThread" failonerror="true" fork="yes">
+            <classpath refid="run.FirstThread.classpath"/>
+        </java>
+    </target>
+    <target name="FirstUniqueCharacter">
+        <java classname="com.tarak.practice.FirstUniqueCharacter" failonerror="true" fork="yes">
+            <classpath refid="run.FirstUniqueCharacter.classpath"/>
+        </java>
+    </target>
+    <target name="Fractorial1">
+        <java classname="com.tarak.practice.Fractorial1" failonerror="true" fork="yes">
+            <classpath refid="run.Fractorial1.classpath"/>
+        </java>
+    </target>
+    <target name="GroceryReceipt">
+        <java classname="com.hackerrank.tarak.GroceryReceipt" failonerror="true" fork="yes">
+            <classpath refid="run.GroceryReceipt.classpath"/>
+        </java>
+    </target>
+    <target name="HashMapAssignments">
+        <java classname="com.tarak.practice.HashMapAssignments" failonerror="true" fork="yes">
+            <classpath refid="run.HashMapAssignments.classpath"/>
+        </java>
+    </target>
+    <target name="InsertStringInAString">
+        <java classname="com.tarak.stringpractice.InsertStringInAString" failonerror="true" fork="yes">
+            <classpath refid="run.InsertStringInAString.classpath"/>
+        </java>
+    </target>
+    <target name="KadanesAlogirthm1">
+        <java classname="com.tarak.practice.KadanesAlogirthm1" failonerror="true" fork="yes">
+            <classpath refid="run.KadanesAlogirthm1.classpath"/>
+        </java>
+    </target>
+    <target name="Knapsack1">
+        <java classname="com.tarak.practice.Knapsack1" failonerror="true" fork="yes">
+            <classpath refid="run.Knapsack1.classpath"/>
+        </java>
+    </target>
+    <target name="ListAssignments">
+        <java classname="com.tarak.practice.ListAssignments" failonerror="true" fork="yes">
+            <classpath refid="run.ListAssignments.classpath"/>
+        </java>
+    </target>
+    <target name="MainThread">
+        <java classname="com.tarak.practice.MainThread" failonerror="true" fork="yes">
+            <classpath refid="run.MainThread.classpath"/>
+        </java>
+    </target>
+    <target name="MainThread1">
+        <java classname="com.tarak.practice.MainThread1" failonerror="true" fork="yes">
+            <classpath refid="run.MainThread1.classpath"/>
+        </java>
+    </target>
+    <target name="MissingElementsInArray1">
+        <java classname="com.tarak.practice.MissingElementsInArray1" failonerror="true" fork="yes">
+            <classpath refid="run.MissingElementsInArray1.classpath"/>
+        </java>
+    </target>
+    <target name="palindrome1">
+        <java classname="com.tarak.practice.palindrome1" failonerror="true" fork="yes">
+            <classpath refid="run.palindrome1.classpath"/>
+        </java>
+    </target>
+    <target name="PrintArray (1)">
+        <java classname="com.tarak.practice.PrintArray" failonerror="true" fork="yes">
+            <classpath refid="run.PrintArray (1).classpath"/>
+        </java>
+    </target>
+    <target name="Removeduplicates1">
+        <java classname="com.tarak.practice.Removeduplicates1" failonerror="true" fork="yes">
+            <classpath refid="run.Removeduplicates1.classpath"/>
+        </java>
+    </target>
+    <target name="RemoveSpacesInString">
+        <java classname="com.tarak.stringpractice.RemoveSpacesInString" failonerror="true" fork="yes">
+            <classpath refid="run.RemoveSpacesInString.classpath"/>
+        </java>
+    </target>
+    <target name="RemovingWhiteSpaces">
+        <java classname="com.tarak.practice.RemovingWhiteSpaces" failonerror="true" fork="yes">
+            <classpath refid="run.RemovingWhiteSpaces.classpath"/>
+        </java>
+    </target>
+    <target name="ReplaceString">
+        <java classname="com.tarak.stringpractice.ReplaceString" failonerror="true" fork="yes">
+            <classpath refid="run.ReplaceString.classpath"/>
+        </java>
+    </target>
+    <target name="ReverseAArray">
+        <java classname="com.tarak.stringpractice.ReverseAArray" failonerror="true" fork="yes">
+            <classpath refid="run.ReverseAArray.classpath"/>
+        </java>
+    </target>
+    <target name="ReverseAString">
+        <java classname="com.tarak.stringpractice.ReverseAString" failonerror="true" fork="yes">
+            <classpath refid="run.ReverseAString.classpath"/>
+        </java>
+    </target>
+    <target name="RunThread">
+        <java classname="com.tarak.practice.RunThread" failonerror="true" fork="yes">
+            <classpath refid="run.RunThread.classpath"/>
+        </java>
+    </target>
+    <target name="SearchElementInArray">
+        <java classname="com.tarak.practice.SearchElementInArray" failonerror="true" fork="yes">
+            <classpath refid="run.SearchElementInArray.classpath"/>
+        </java>
+    </target>
+    <target name="SecondLargest1">
+        <java classname="com.tarak.practice.SecondLargest1" failonerror="true" fork="yes">
+            <classpath refid="run.SecondLargest1.classpath"/>
+        </java>
+    </target>
+    <target name="SetExample">
+        <java classname="com.hackerrank.tarak.SetExample" failonerror="true" fork="yes">
+            <classpath refid="run.SetExample.classpath"/>
+        </java>
+    </target>
+    <target name="SetProgram">
+        <java classname="com.tarak.practice.SetProgram" failonerror="true" fork="yes">
+            <classpath refid="run.SetProgram.classpath"/>
+        </java>
+    </target>
+    <target name="SortArray">
+        <java classname="com.tarak.practice.SortArray" failonerror="true" fork="yes">
+            <classpath refid="run.SortArray.classpath"/>
+        </java>
+    </target>
+    <target name="StringIsPlandorme">
+        <java classname="StringIsPlandorme" failonerror="true" fork="yes">
+            <classpath refid="run.StringIsPlandorme.classpath"/>
+        </java>
+    </target>
+    <target name="SumOfListIntegers">
+        <java classname="com.tarak.practice.SumOfListIntegers" failonerror="true" fork="yes">
+            <classpath refid="run.SumOfListIntegers.classpath"/>
+        </java>
+    </target>
+    <target name="TestBank1">
+        <java classname="TestBank1" failonerror="true" fork="yes">
+            <classpath refid="run.TestBank1.classpath"/>
+        </java>
+    </target>
+</project>
