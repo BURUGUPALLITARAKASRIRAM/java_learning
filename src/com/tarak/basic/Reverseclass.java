@@ -1,5 +1,4 @@
 package com.tarak.basic;
-
 import java.util.Scanner;
  public class Reverseclass{
     public static void main (String args[]){
@@ -16,6 +15,5 @@ import java.util.Scanner;
    }
    System.out.println("Reverse String :"+ outputString);
 		}
-    }
-    
+    }   
 }

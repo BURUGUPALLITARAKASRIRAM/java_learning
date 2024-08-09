@@ -1,8 +1,12 @@
 package com.tarak.basic;
 
 import java.util.Scanner;
+
+import com.practice.recollection.AddTwoNumbers;
 public class PrintArray{
     public static void main(String args[]) {
+    	
+
       int[] array =new int[10];
       try (Scanner scanner = new Scanner(System.in)) {
 		int i=0;
@@ -31,7 +35,5 @@ public class PrintArray{
         {
             System.out.println(array1[i]+"  ");
         }
-    }
-
-    
+    }    
 }

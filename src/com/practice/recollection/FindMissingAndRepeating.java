@@ -3,7 +3,9 @@ package com.practice.recollection;
 public class FindMissingAndRepeating {
 	public static int[] findMissingAndReapting(int[] nums,int n) {
 		int[] result =new int[2];
-		
+    AddTwoNumbers add=new AddTwoNumbers() ;
+  add.sumOfTwoNumbers();
+    
 		int actualSum=0;
 		int expectedsum=n*(n+1)/2;
 		int repeatedNum=0;
